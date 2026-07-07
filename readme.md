@@ -1,73 +1,66 @@
-# 👟 SoleVault – Premium Sneaker Store
+# SoleVault – Premium Sneaker Store
 
-SoleVault is a modern, responsive sneaker e-commerce website developed using **HTML, CSS, JavaScript, and Three.js**. It allows users to browse premium sneakers, view product details, switch between color variants, interact with a 3D shoe model, and manage a shopping cart.
-
-This project was developed as part of the **M-Tech Web Development Internship**.
+SoleVault is a modern responsive sneaker e-commerce website developed using HTML, CSS and JavaScript. The project showcases premium sneakers from Nike, Adidas, Jordan and Puma with an interactive shopping experience and 3D product viewing.
 
 ---
 
-# 📌 Project Description
+## Live Demo
 
-SoleVault provides an attractive online shopping experience for sneaker enthusiasts. Users can browse products from leading brands, explore detailed product pages, preview different colorways, view selected shoes in 3D, and add products to their shopping cart.
+**Website:** https://sole-vault-store.netlify.app
+---
 
-The website is fully responsive and works across desktop, tablet, and mobile devices.
+## GitHub Repository
+
+https://github.com/Roman-Arshad/SoleVault-Premium-Sneaker-store
 
 ---
 
-# ✨ Features
+# Features
 
-- Responsive design (Desktop, Tablet & Mobile)
+- Responsive design (Mobile, Tablet & Desktop)
 - Modern UI/UX
-- Product listing page
-- Product details page
-- Multiple shoe color selection
-- Product image gallery
-- Three.js 3D shoe viewer
-- Product stock indicator
 - Product search
 - Product filters
+- Product details page
+- Multiple shoe color selection
+- Image gallery
+- On-foot preview gallery
+- Stock availability indicator
 - Shopping cart
-- Quantity selector
-- Size selection
-- Related products section
-- Newsletter subscription form
-- Contact form
-- Mobile navigation menu
+- Size Finder
+- Checkout page
+- 3D Shoe Viewer using Three.js
+- Newsletter section
+- Contact page
+- About page
 
 ---
 
-# 🛠 Technologies Used
+# Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript (ES6)
 - Three.js
-- Bootstrap Icons
-- Google Fonts (Poppins)
+- Git & GitHub
+- Netlify
 
 ---
 
-# 📁 Project Structure
+# Folder Structure
 
 ```
-SoleVault/
+SoleVault
 │
-├── assets/
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── models/
+├── assets
+│   ├── css
+│   ├── images
+│   ├── js
+│   └── models
 │
-├── pages/
-│   ├── about.html
-│   ├── cart.html
-│   ├── contact.html
-│   ├── login.html
-│   ├── product.html
-│   ├── shop.html
-│   └── size-finder.html
+├── pages
 │
-├── screenshots/
+├── screenshots
 │
 ├── index.html
 └── README.md
@@ -75,138 +68,63 @@ SoleVault/
 
 ---
 
-# 🚀 Features Overview
+# Screenshots
 
 ## Home Page
 
-- Hero section
-- Featured sneakers
-- Shop by category
-- Brand section
-- Newsletter
+![Home](screenshots/home.png)
+
+---
 
 ## Shop Page
 
-- Product grid
-- Search functionality
-- Product filters
-- Sorting options
+![Shop](screenshots/shop.png)
+
+---
 
 ## Product Page
 
-- Multiple product images
-- Color selection
-- Size selection
-- Quantity selector
-- Stock availability
-- 3D product viewer
-- Related products
-
-## Cart
-
-- Add products
-- Update quantity
-- Remove products
-- Order summary
+![Product](screenshots/product.png)
 
 ---
 
-# 📱 Responsive Design
-
-The website is optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile Devices
-
----
-
-# ▶️ How to Run
+# How to Run
 
 1. Download or clone the repository.
 
+```
+git clone https://github.com/Roman-Arshad/SoleVault-Premium-Sneaker-store.git
+```
+
 2. Open the project folder.
 
-3. Open **index.html** in your browser.
+3. Open `index.html` in your browser.
 
-Or use **VS Code Live Server** for the best experience.
-
----
-
-# 📸 Screenshots
-
-## Home Page
-
-(Add Screenshot Here)
+No installation is required.
 
 ---
 
-## Shop Page
+# AI Assistance
 
-(Add Screenshot Here)
+ChatGPT was used to assist with:
 
----
-
-## Product Page
-
-(Add Screenshot Here)
-
----
-
-# 🤖 AI Assistance
-
-AI tools (ChatGPT) were used during the development process for:
-
-- Learning new concepts
 - Debugging JavaScript
-- Improving code structure
-- Solving responsive design issues
-- Understanding Three.js integration
+- Improving responsive layouts
+- Developing the search functionality
+- Implementing the product gallery
+- Building the 3D shoe viewer
+- Code optimization and troubleshooting
 
-All project logic, implementation, testing, and customization were completed by the developer.
-
----
-
-# 🔮 Future Improvements
-
-- Firebase Database Integration
-- User Authentication
-- Wishlist
-- Order History
-- Payment Gateway
-- Product Reviews
-- Admin Dashboard
-- AR Shoe Try-On
+All project logic was reviewed, understood, integrated, and tested before submission.
 
 ---
 
-# 🌐 Live Demo
+# Author
 
-**Live Website:**
+**Roman Arshad**
 
-(Add Deployment Link Here)
+BS Computer Science
 
----
+M-Tech Internship Project
 
-# 💻 GitHub Repository
-
-**Repository:**
-
-(Add GitHub Repository Link Here)
-
----
-
-# 👨‍💻 Developer
-
-**Roman Khan**
-
-M-Tech Web Development Internship Project
-
----
-
-# 📄 License
-
-This project is developed for educational and portfolio purposes.
-
-© 2026 SoleVault. All Rights Reserved.
+2026
