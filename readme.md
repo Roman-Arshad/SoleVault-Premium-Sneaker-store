@@ -123,7 +123,7 @@ All project logic was reviewed, understood, integrated, and tested before submis
 
 **Roman Arshad**
 
-BS Computer Science
+BS Software Engineering
 
 M-Tech Internship Project
 
