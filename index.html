@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>SoleVault | Premium Sneaker Store</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html">SoleVault</a>
+            </div>
+            <!-- Search Section -->
+            <div class="search-box">
+                <input type="search" id="searchInput" placeholder="Search Sneakers..." aria-label="Search sneakers">
+            </div>
+            <!-- Menu Section -->
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="pages/cart.html">Cart <span class="cart-count">0</span></a>
+                    <a href="pages/login.html">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1>Step Into Premium Performance</h1>
+                    <p>
+                        Discover authentic sneakers from Nike, Adidas, Jordan, and Puma. Shop the latest collections
+                        with premium quality and style.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="pages/shop.html" class="btn-primary">Shop Now</a>
+                        <a href="pages/shop.html" class="btn-secondary">Explore Collection</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h2>500+</h2>
+                            <p>Premium Shoes</p>
+                        </div>
+                        <div class="stat">
+                            <h2>4</h2>
+                            <p>Premium Brands</p>
+                        </div>
+                        <div class="stat">
+                            <h2>10K+</h2>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/heros/hero.png" alt="Premium Sneakers">
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Deals -->
+        <section class="top-deals">
+            <div class="container">
+                <h2>Top Deals</h2>
+                <div class="deal-grid">
+                    <div class="deal-card">
+                        <span class="discount">-20%</span>
+                        <img src="assets/images/products/nike/air-max-270/nike-air-max-270-white.png"
+                            alt="Nike Air Max">
+                        <h3>Nike Air Max 270</h3>
+                        <p class="brand">Nike</p>
+                        <p class="price">
+                            <span class="old-price">$150</span>
+                            <span class="new-price">$120</span>
+                        </p>
+                        <a href="pages/product.html?id=1" class="btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop by Brand -->
+        <section class="brands">
+            <div class="container">
+                <h2>Trusted Premium Brands</h2>
+                <div class="brand-grid">
+                    <div class="brand-card">
+                        <a href="pages/shop.html?brand=nike"></a>
+                            <img src="assets/images/brands/nike-logo.png" alt="Nike">
+                        </a>
+                    </div>
+                    <div class="brand-card">
+                        <a href="pages/shop.html?brand=adidas"></a>
+                            <img src="assets/images/brands/adidas-logo.png" alt="Adidas">
+                    </div>
+                    <div class="brand-card">
+                        <a href="pages/shop.html?brand=jordan"></a>
+                            <img src="assets/images/brands/jordan-logo.png" alt="Jordan">
+                    </div>
+                    <div class="brand-card">
+                        <a href="pages/shop.html?brand=puma"></a>
+                            <img src="assets/images/brands/puma-logo.png" alt="Puma">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             SHOP BY CATEGORY
+        ===================================================== -->
+        <section class="categories">
+            <div class="container">
+                <div class="section-title">
+                    <span>Categories</span>
+                    <h2>Shop by Category</h2>
+                    <p>
+                        Discover the perfect sneakers for every lifestyle, from daily wear
+                        to professional performance.
+                    </p>
+                </div>
+                <div class="category-grid">
+                    <!-- Running -->
+                    <div class="category-card">
+                        <img src="assets/images/categories/running.png" alt="Running Shoes">
+                        <div class="category-content">
+                            <span>Performance</span>
+                            <h3>Running</h3>
+                            <p>95+ Premium Products</p>
+                            <a href="pages/shop.html?category=running">Explore →</a>
+                        </div>
+                    </div>
+                    <!-- Sneakers -->
+                    <div class="category-card">
+                        <img src="assets/images/categories/lifestyle.png" alt="Sneakers">
+                        <div class="category-content">
+                            <span>Everyday Style</span>
+                            <h3>Lifestyle</h3>
+                            <p>Premium LifeStyle Collection</p>
+                            <a href="pages/shop.html?category=lifestyle">Explore →</a>
+                        </div>
+                    </div>
+                    <!-- Casual -->
+                    <div class="category-card">
+                        <img src="assets/images/categories/casual.png" alt="Casual Shoes">
+                        <div class="category-content">
+                            <span>Comfort</span>
+                            <h3>Casual</h3>
+                            <p>80+ Premium Products</p>
+                            <a href="pages/shop.html?category=casual">Explore →</a>
+                        </div>
+                    </div>
+                    <!-- Basketball -->
+                    <div class="category-card">
+                        <img src="assets/images/categories/basketball.png" alt="Basketball Shoes">
+                        <div class="category-content">
+                            <span>Sports</span>
+                            <h3>Basketball</h3>
+                            <p>65+ Premium Products</p>
+                            <a href="pages/shop.html?category=basketball">Explore →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             FEATURED PRODUCTS
+        ===================================================== -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-title">
+                    <span>Featured Collection</span>
+                    <h2>Trending Sneakers</h2>
+                    <p>
+                        Discover the latest premium sneakers from Nike, Adidas, Jordan, and Puma.
+                    </p>
+                </div>
+                <div class="products-grid">
+                    <!-- Nike -->
+                    <div class="product-card">
+                        <span class="product-badge">New</span>
+                        <img src="assets/images/products/nike/air-max-270/nike-air-max-270-white.png"
+                            alt="Nike Air Max 270" loading="lazy">
+                        <div class="product-info">
+                            <p class="product-brand">Nike</p>
+                            <h3><a href="pages/product.html?id=1">Air Max 270</a></h3>
+                            <p class="product-category">Running</p>
+                            <div class="product-price">
+                                <span class="old-price">$150</span>
+                                <span class="new-price">$120</span>
+                            </div>
+                            <a href="pages/product.html?id=1" class="btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Adidas -->
+                    <div class="product-card">
+                        <span class="product-badge">Popular</span>
+                        <img src="assets/images/products/adidas/ultraboost-5/adidas-ultraboost-5-black.png"
+                            alt="Adidas Ultraboost 5" loading="lazy">
+                        <div class="product-info">
+                            <p class="product-brand">Adidas</p>
+                            <h3><a href="pages/product.html?id=2">Ultraboost 5</a></h3>
+                            <p class="product-category">Running</p>
+                            <div class="product-price">
+                                <span class="new-price">$200</span>
+                            </div>
+                            <a href="pages/product.html?id=2" class="btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Jordan -->
+                    <div class="product-card">
+                        <span class="product-badge">Hot</span>
+                        <img src="assets/images/products/jordan/retro-4/air-jordan-4-retro-white.png" alt="Air Jordan 4 Retro"
+                            loading="lazy">
+                        <div class="product-info">
+                            <p class="product-brand">Jordan</p>
+                            <h3><a href="pages/product.html?id=3">Air Jordan 4 Retro</a></h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-price">
+                                <span class="new-price">$220</span>
+                            </div>
+                            <a href="pages/product.html?id=3" class="btn-primary">View Details</a>
+                        </div>
+                    </div>
+                    <!-- Puma -->
+                    <div class="product-card">
+                        <span class="product-badge">Sale</span>
+                        <img src="assets/images/products/puma/puma-rs/puma-rs-green.png" alt="Puma RS" loading="lazy">
+                        <div class="product-info">
+                            <p class="product-brand">Puma</p>
+                            <h3><a href="pages/product.html?id=4">Puma RS</a></h3>
+                            <p class="product-category">Casual</p>
+                            <div class="product-price">
+                                <span class="new-price">$165</span>
+                            </div>
+                            <a href="pages/product.html?id=4" class="btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-btn">
+                    <a href="pages/shop.html" class="btn-primary">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             WHY CHOOSE US
+        ===================================================== -->
+        <section class="why-choose">
+            <div class="container">
+                <div class="section-title">
+                    <span>Why Choose Us</span>
+                    <h2>Why Shop with SoleVault?</h2>
+                    <p>
+                        We provide premium sneakers with guaranteed authenticity,
+                        fast delivery, and exceptional customer service.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">✓</div>
+                        <h3>100% Authentic</h3>
+                        <p>Every sneaker is sourced directly from trusted brands and verified suppliers.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🚚</div>
+                        <h3>Fast Delivery</h3>
+                        <p>Get your favorite sneakers delivered quickly and safely to your doorstep.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Secure Payments</h3>
+                        <p>Shop confidently using secure and trusted payment methods.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">💬</div>
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is always ready to help with your questions and orders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================================================
+             NEWSLETTER
+        ===================================================== -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <span>Stay Updated</span>
+                    <h2>Join the SoleVault Community</h2>
+                    <p>
+                        Subscribe to receive updates on new sneaker releases,
+                        exclusive offers, and limited-edition collections.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <h2 class="footer-logo">SoleVault</h2>
+                    <p>
+                        SoleVault brings you authentic premium sneakers from the
+                        world's leading brands including Nike, Adidas, Jordan,
+                        and Puma.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/shop.html">Shop</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Shop -->
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="pages/shop.html?brand=nike">Nike</a></li>
+                        <li><a href="pages/shop.html?brand=adidas">Adidas</a></li>
+                        <li><a href="pages/shop.html?brand=jordan">Jordan</a></li>
+                        <li><a href="pages/shop.html?brand=puma">Puma</a></li>
+                    </ul>
+                </div>
+                <!-- Contact -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: support@solevault.com</li>
+                        <li>Phone: +92 300 1234567</li>
+                        <li>Lahore, Pakistan</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 SoleVault. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+
+</html>

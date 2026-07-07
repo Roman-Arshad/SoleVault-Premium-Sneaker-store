@@ -1,0 +1,226 @@
+/* =====================================================
+   ABOUT / CONTACT BANNER (shared)
+===================================================== */
+
+.about-banner {
+    padding: 100px 0 60px;
+    text-align: center;
+    background: var(--light-bg);
+}
+
+.about-banner span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-banner h1 {
+    font-size: 46px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.about-banner p {
+    color: var(--gray-color);
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   ABOUT STORY
+===================================================== */
+
+.about-story {
+    padding: 100px 0;
+}
+
+.about-story-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    height: 400px;
+    object-fit: cover;
+    background: var(--light-bg);
+}
+
+.about-text span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-text h2 {
+    font-size: 34px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--gray-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   ABOUT STATS
+===================================================== */
+
+.about-stats {
+    padding: 100px 0;
+    background: var(--primary-color);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-box h2 {
+    font-size: 42px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    color: #cccccc;
+    font-size: 15px;
+}
+
+/* =====================================================
+   ABOUT VALUES
+===================================================== */
+
+.about-values {
+    padding: 100px 0;
+    background: var(--light-bg);
+}
+
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-card {
+    background: var(--light-bg);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-info-card .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.contact-info-card h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.contact-info-card p {
+    color: var(--gray-color);
+    font-size: 15px;
+}
+
+.contact-form {
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.contact-form .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color .3s ease;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.contact-form button {
+    border: none;
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+    .about-story-layout,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form .form-row {
+        grid-template-columns: 1fr;
+    }
+}

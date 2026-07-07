@@ -1,0 +1,160 @@
+/* =====================================================
+   SIZE FINDER BANNER
+===================================================== */
+
+.size-finder-banner {
+    padding: 100px 0 60px;
+    text-align: center;
+    background: var(--light-bg);
+}
+
+.size-finder-banner span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.size-finder-banner h1 {
+    font-size: 46px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.size-finder-banner p {
+    color: var(--gray-color);
+    font-size: 17px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   SIZE FINDER LAYOUT
+===================================================== */
+
+.size-finder-main {
+    padding: 100px 0;
+}
+
+.size-finder-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* =====================================================
+   SIZE TOOL
+===================================================== */
+
+.size-tool {
+    background: var(--light-bg);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.size-tool h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.size-tool label {
+    display: block;
+    color: var(--gray-color);
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.size-tool input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.size-tool input:focus {
+    border-color: var(--primary-color);
+}
+
+.size-tool button {
+    width: 100%;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.size-result {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+}
+
+.size-result p {
+    color: var(--gray-color);
+    font-size: 15px;
+}
+
+.size-result h3 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-top: 10px;
+}
+
+/* =====================================================
+   SIZE CHART TABLE
+===================================================== */
+
+.size-chart h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.size-chart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.size-chart th {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.size-chart th:first-child {
+    border-radius: 12px 0 0 0;
+}
+
+.size-chart th:last-child {
+    border-radius: 0 12px 0 0;
+}
+
+.size-chart td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--gray-color);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+    .size-finder-layout {
+        grid-template-columns: 1fr;
+    }
+}
+.size-chart{
+    overflow-x:auto;
+}

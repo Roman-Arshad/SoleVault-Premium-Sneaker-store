@@ -1,0 +1,495 @@
+/* =====================================================
+   BREADCRUMB
+===================================================== */
+
+.breadcrumb {
+    padding: 30px 0 0;
+    color: var(--gray-color);
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: var(--gray-color);
+    transition: color .3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+/* =====================================================
+   PRODUCT DETAIL LAYOUT
+===================================================== */
+
+.product-detail {
+    padding: 40px 0 100px;
+}
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery-main {
+    background: var(--light-bg);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.gallery-main img {
+    width: 100%;
+    max-width: 100%;
+    height: 420px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 15px;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: var(--light-bg);
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color .3s ease;
+}
+
+.thumb.active,
+.thumb:hover {
+    border-color: var(--primary-color);
+}
+
+/* =====================================================
+   PRODUCT INFO
+===================================================== */
+
+.product-details-info .product-brand {
+    color: var(--gray-color);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.product-details-info h1 {
+    font-size: 38px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #f5a623;
+    margin-bottom: 20px;
+}
+
+.product-rating span {
+    color: var(--gray-color);
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.new-price {
+    color: #111;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.product-details-info .product-price {
+    margin-bottom: 25px;
+}
+
+.product-details-info .new-price {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.product-desc {
+    color: var(--gray-color);
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+/* =====================================================
+   SIZE SELECTOR
+===================================================== */
+
+.size-selector {
+    margin-bottom: 35px;
+}
+
+.size-selector h3 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.size-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.size-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--white);
+    font-family: inherit;
+    font-size: 15px;
+    color: var(--primary-color);
+    transition: all .3s ease;
+}
+
+.size-btn:hover {
+    border-color: var(--primary-color);
+}
+
+.size-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.size-finder-link {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--gray-color);
+    text-decoration: underline;
+}
+
+/* =====================================================
+   QUANTITY + ADD TO CART
+===================================================== */
+
+.product-actions {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.qty-selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    width: 45px;
+    height: 52px;
+    border: none;
+    background: var(--white);
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.qty-btn:hover {
+    background: var(--light-bg);
+}
+
+#qtyValue {
+    width: 40px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.add-to-cart-btn {
+    flex: 1;
+    text-align: center;
+    border: none;
+}
+
+/* =====================================================
+   PRODUCT META
+===================================================== */
+
+.product-meta {
+    border-top: 1px solid var(--border-color);
+    padding-top: 25px;
+}
+
+.product-meta p {
+    color: var(--gray-color);
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.product-meta strong {
+    color: var(--primary-color);
+}
+
+/* =====================================================
+   RELATED PRODUCTS
+===================================================== */
+
+.related-products {
+    padding: 0 0 100px;
+    background: var(--white);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   COLOR SELECTOR
+========================= */
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color-btn {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.2);
+    border-color: #000;
+}
+
+/* =========================
+   STOCK BADGE
+========================= */
+.stock-status {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.in-stock {
+    color: green;
+}
+
+.low-stock {
+    color: orange;
+}
+
+.out-stock {
+    color: red;
+}
+
+
+.model-viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.model-viewer.hidden {
+    display: none;
+}
+
+.model-box {
+    width: min(900px, 90vw);
+    height: 80vh;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .4);
+}
+
+#threeCanvas {
+    width: 100%;
+    height: 100%;
+}
+
+.model-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+}
+
+.model-controls button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.model-controls button:hover {
+    background: #333;
+}
+
+.view3d-btn {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.color-options {
+    margin-bottom: 20px;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.onfoot-viewer {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .85);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+.onfoot-box {
+
+    position: relative;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+        width:min(750px,90vw);
+
+    text-align: center;
+}
+
+#onFootMainImage {
+
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+
+}
+
+.onfoot-thumbs {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+
+.onfoot-thumb {
+
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    border: 2px solid transparent;
+    flex-shrink: 0;
+    transition: .3s;
+}
+
+.onfoot-thumb:hover {
+
+    border-color: #000;
+}
+
+.onfoot-thumb.active {
+    border: 2px solid var(--primary-color);
+}
+
+#closeOnFoot {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #111;
+    color: #fff;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+#closeOnFoot:hover {
+    background: #333;
+}

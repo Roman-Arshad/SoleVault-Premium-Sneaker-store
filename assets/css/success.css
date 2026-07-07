@@ -1,0 +1,76 @@
+/* =====================================================
+   SUCCESS PAGE
+===================================================== */
+
+.success-section {
+    padding: 120px 0;
+}
+
+.success-box{
+    max-width:600px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.success-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background: #1e8e3e;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.success-box span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.success-box h1 {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.success-box p {
+    color: var(--gray-color);
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.order-details {
+    background: var(--light-bg);
+    border-radius: 16px;
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.order-detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: var(--gray-color);
+    font-size: 15px;
+}
+
+.order-detail-row:last-child {
+    margin-bottom: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
